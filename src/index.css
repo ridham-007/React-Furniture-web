@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.contact_form_container {
+  font-size: large;
+}
+.inpuft_filed {
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+.contact_form_text textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+.contact_info_content {
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .inpuft_filed {
+    display: block;
+  }
+}
+
+/* navbAR */
+
+.active {
+  border-bottom: 1px solid #fff;
+}
+
+.navbar {
+  background-color: transparent !important;
+}
+
+@media only screen and (max-width: 542px) {
+  .navbar {
+    background-color: #333 !important;
+  }
+}
+
+.navbar.colorChange {
+  background: #333 !important;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+.navbar-brand {
+  font-size: 1.3rem;
+  color: #565387 !important;
+  font-weight: 400;
+}
+
+.navbar a {
+  text-transform: capitalize;
+}
+
+.menu_active {
+  font-weight: bold;
+  border-bottom: 2px solid #565387;
+  transition: border-bottom 0.5s ease-in-out;
+}
+
+.navbar-toggler {
+  color: #fff;
+}
+
+/* contact page */
+
+.about_main {
+  max-width: 100%;
+  height: auto;
+  background-color: #333;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  padding: 120px 100px 0px 100px;
+}
+
+@media only screen and (max-width: 542px) {
+  .about_main {
+    padding: 100px 10px 30px 10px;
+  }
+}
+
+.about_content {
+  margin-bottom: 30px;
+}
+
+.about_main_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media only screen and (max-width: 912px) {
+  .about_main_header {
+    padding-bottom: 10px !important;
+  }
+}
+
+.about_main_header img {
+  outline: 1px solid white;
+  outline-offset: 6px;
+}
+
+.about_main_head {
+  height: 5%;
+  padding-top: 50px;
+}
+
+.about_main_head h3 {
+  max-width: 1100px;
+  color: #feb70e;
+  border-bottom-style: double;
+  border-bottom-color: #fff;
+}
+
+.about_main_desc p {
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+  padding: 10px;
+  text-align: justify;
+  color: #feb70e;
+  font-size: 16px;
+  line-height: 1.66em;
+}
+
+.about_second_img {
+  padding: 40px;
+  background-color: cadetblue;
+}
+.about_second_img img {
+  width: 100%;
+  margin-left: 95px;
+}
+.about_second_des {
+  text-align: center;
+  margin: auto;
+}
+.about_second_des h4 {
+  font-weight: 700;
+  font-size: 45px;
+}
+.about_second_des p {
+  color: burlywood;
+  font-weight: 700;
+}
+.customer {
+  margin: auto;
+  padding: 50px;
+}
+
+@media only screen and (max-width: 765px) {
+  .customer {
+    margin: auto;
+    padding: 0px;
+  }
+}
+
+.customer img {
+  margin-right: 15px;
+}
+
+.customer h3 {
+  font-weight: 700;
+  color: burlywood;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+/*Gallery -page */
+
+.carousel-root {
+  width: 100% !important;
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+.carousel .slide {
+  background: #fff !important;
+  color: black;
+  height: 100%;
+}
+
+.carousel .slide img {
+  width: 139px !important;
+  border-radius: 50%;
+}
+
+.myCarousel {
+  /* background: #fafafa; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/carousal.jpg);
+  margin-top: -6%;
+  width: 100%;
+  visibility: inherit;
+  padding-top: 15%;
+  padding-bottom: 8%;
+  background-position: center center;
+  background-size: 100% 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 450px;
+  background-repeat: no-repeat;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+  bottom: 5% !important;
+}
+
+.myCarousel h3 {
+  position: relative;
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  top: 20% !important;
+}
+
+.myCarousel h4 {
+  position: relative;
+  text-transform: uppercase;
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  top: 20% !important;
+}
+
+.myCarousel p {
+  position: relative;
+  font-weight: 100 !important;
+  line-height: 29px !important;
+  color: #fff;
+  font-size: 15px;
+  font-family: sans-serif;
+  max-height: 67px;
+  font-weight: bold;
+  top: 20% !important;
+}
+
+.myCarousel p:before {
+  content: "“";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.myCarousel p:after {
+  content: "”";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+  line-height: 0;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  outline: 0;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: #000 !important;
+  height: 50px !important;
+  position: absolute;
+  top: 20% !important;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 680px !important;
+  width: 4%;
+}
+
+.carousel .control-next.control-arrow {
+  right: 680px !important;
+  width: 4%;
+}
+
+.App {
+  text-align: center;
+}
+
+@media only screen and (max-width: 934px) {
+  .carousel-root {
+    outline: 0;
+    width: 100% !important;
+    margin: auto !important;
+  }
+
+  .carousel.carousel-slider .control-arrow {
+    display: none !important;
+  }
+  .myCarousel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/carousal.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    margin-top: -9%;
+    width: 100%;
+    height: 299px;
+    color: #fff;
+  }
+
+  .myCarousel h3 {
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+
+  .myCarousel h4 {
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 500;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .myCarousel p {
+    font-weight: 100 !important;
+    line-height: 29px !important;
+    color: #fff;
+    font-size: 15px;
+    font-family: sans-serif;
+    max-height: 67px;
+  }
+  .carousel .slide img {
+    width: 24% !important;
+    border-radius: 50%;
+  }
+}
+
+/* Gallery CSS */
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* @media only screen and (min-width:991px && max-width: 1200px) {
+  .imagelist {
+    width: 540px;
+    height: 450px;
+  }
+} */
+
+@media screen and (max-width: 500px) {
+  .imagelist {
+    width: 540px !important;
+    height: 450px !important;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .imagelist {
+    width: 750px !important;
+    height: 650px !important;
+  }
+}
+
+/*footer */
+
+.navlink {
+  color: #fff;
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navlink:hover {
+  color: #fff;
+  border-bottom: 1px solid #feb70e;
+}
+
+@media screen and (max-width: 540px) {
+  .m-footer {
+    display: none !important;
+  }
+  .main-footer {
+    padding-top: 0px !important;
+  }
+}

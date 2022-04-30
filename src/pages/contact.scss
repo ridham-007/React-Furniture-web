@@ -1,0 +1,188 @@
+$black: #222;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: helvetica;
+    position: relative;
+    font-size: 100%;
+    background: #333;
+}
+.gallery-container {
+    padding: 100px 100px 100px 100px;
+    // background: #d1913c;
+}
+
+.gallery-container1 {
+    padding: 10px 100px 100px 100px;
+}
+@media screen and (max-width: 480px) {
+    .gallery-container {
+        padding: 100px 40px 40px 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-container1 {
+        padding: 20px 40px 40px 40px;
+    }
+}
+
+.gallery-container h1 {
+    margin: 2rem 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 6.5vw;
+    font-weight: lighter;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (min-width: 649px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* image grid styles */
+.img-grid {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+.img-wrap {
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    /* padding controls height, will always be perfectly square regardless of width */
+    position: relative;
+    opacity: 0.8;
+}
+.img-wrap img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* modal styles */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.backdrop img {
+    display: block;
+    max-width: 60%;
+    max-height: 80%;
+    margin: 60px auto;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
+    border: 3px solid white;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.imageContainer img {
+    width: 100%;
+    height: 300px;
+    transition: 0.5s all ease-in-out;
+}
+
+@media screen and (max-width: 480px) {
+    .imageContainer img {
+        max-width: 600px;
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.imageContainer:hover {
+    img {
+        transform: scale(1.2);
+    }
+}
+
+.mybtnwrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+}
+.mybtnwrapper:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.mybtn {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: inline-block;
+    text-align: center;
+    transition: opacity 0.25s;
+    display: flex;
+    justify-content: center;
+}
+
+.mybtn:hover {
+    opacity: 1;
+    zoom: normal;
+    cursor: pointer;
+}
+
+.mybtn h4 {
+    width: 100%;
+    position: relative;
+    height: 80px;
+    display: flex;
+    margin-bottom: 0;
+    background-color: #222;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.mybtn svg {
+    align-self: center;
+}
